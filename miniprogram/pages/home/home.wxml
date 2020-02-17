@@ -1,0 +1,40 @@
+<!--pages/home/home.wxml-->
+<view class="home-container">
+  <!-- 首页logo -->
+  <view class="home-logo">
+    <view>
+      <image src="/images/logo.png" style="width:80rpx;height:80rpx"></image>
+      <text>包你堡</text>
+    </view>  
+  </view>
+  <!-- 首页轮播 -->
+  <view class="swiper-container">
+    <swiper autoplay="{{autoplay}}" duration="{{duration}}" indicator-dots="{{indicatorDots}}">
+      <block wx:for="{{imgUrl}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.imgUrl}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="home-buy">
+    <view>
+      <view class="home-buyImg">
+        <image src="/images/就餐.png" style="width:100rpx;height:100rpx"></image>
+      </view>
+      <view>
+        <text>立即订餐</text>
+      </view>
+      <button bindtap="orderFood">立即进入</button>
+    </view>
+    <view>
+      <view class="home-buyImg">
+        <image src="/images/订单.png" style="width:100rpx;height:100rpx"></image>
+      </view>
+      <view>
+        <text>我的订单</text>
+      </view>
+      <button bindtap="orderFrom">立即进入</button>
+    </view>
+  </view>
+</view>

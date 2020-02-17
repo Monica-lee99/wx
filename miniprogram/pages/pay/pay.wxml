@@ -1,0 +1,19 @@
+<view class="pay-container">
+  <view class="pay-info">
+    <view class="pay-top">购物车</view>
+    <view class="pay-desc">
+      <view>
+        <view>点餐内容</view>
+        <view bindtap="del">[清空]</view>
+      </view>
+      <view>
+        <block wx:for="{{cart}}" wx:key="index">
+          <view></view>
+          <view></view>
+          <view></view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+</view>

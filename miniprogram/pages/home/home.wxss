@@ -1,0 +1,63 @@
+/* pages/home/home.wxss */
+.home-container{
+  width: 100%;
+  height: 100%;
+}
+.home-logo{
+  width: 100%;
+  height: 130rpx;
+  background-color: #ffac38;
+  display: flex;
+  justify-content: space-around;
+}
+.home-logo>view{ 
+  display: flex;
+  height: 80rpx;
+  margin: 0 auto;
+}
+.home-logo text{
+  color: white;
+  font-size: 40rpx;
+  margin-top: 26rpx;
+}
+.swiper-container{
+  width: 100%;
+  height: 740rpx;
+}
+swiper{
+  width: 100%;
+  height: 740rpx;
+}
+swiper-item image{
+  width: 100%;
+  height: 740rpx;
+}
+.home-buy{
+  display: flex;
+  width: 100%;
+  height: 350rpx;
+  background: rgba(17, 9, 9, 0.856)
+}
+.home-buy>view{
+  width: 50%;
+
+}
+.home-buyImg>image{
+  display: block;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+text{
+  display: block;
+  color: white;
+  font-size: 28rpx;
+  height: 30rpx;
+  line-height: 28rpx;
+  text-align: center;
+  margin-top: 15rpx;
+}
+.home-buy>view>button{
+  width: 80%;
+  margin-top: 30rpx;
+  background: #ffac38;
+}

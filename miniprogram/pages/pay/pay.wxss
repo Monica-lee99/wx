@@ -1,0 +1,35 @@
+/* pages/pay/pay.wxss */
+.pay-container{
+  width: 100%;
+}
+.pay-info{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  background: white;
+}
+.pay-top{
+  text-align: center;
+  font-weight: 800;
+  font-size: 30rpx;
+  line-height: 90rpx;
+  height: 90rpx;
+  border-bottom: 6rpx solid #ccc;
+}
+.pay-desc{
+  margin-top: 20rpx;
+}
+.pay-desc>view:nth-child(1){
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 2rpx solid #ccc;
+  line-height: 80rpx;
+}
+.pay-desc>view:nth-child(1)>view{
+  width: 50%;
+}
+.pay-desc>view:nth-child(1)>view:nth-child(2){
+  text-align: right;
+  color: #ccc;
+}

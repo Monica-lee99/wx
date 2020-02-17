@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-toast": "vant-weapp/toast/index"
+  },
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ffac38",
+  "navigationBarTitleText": "菜单",
+  "navigationBarTextStyle": "white"
+}

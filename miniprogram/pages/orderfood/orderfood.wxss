@@ -1,0 +1,141 @@
+/* pages/orderfood/orderfood.wxss */
+.productNav{
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei";
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.top{
+  display: flex;
+  width: 100%;
+}
+.left{
+  width: 25%;
+  height: 805rpx;
+  font-size: 30rpx;
+  background-color: #f4f4f4;
+}
+.left view{
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.selected{
+  background-color: #fff;
+  border-left: 2px solid #E54847;
+  font-weight: bold;
+  color: #E54847;
+}
+.normal{
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f2f2f2;
+}
+.right{
+  width:75%;
+  margin: 0;
+}
+.type{
+  width: 100%;
+  height: 960rpx;
+  background: #ffac38;
+  overflow-x: hidden;
+}
+.type::before{
+  content: "";
+  display: table;
+}
+.item{
+  display: flex;
+  width: 95%;
+  height: 250rpx;
+  background:white;
+  margin:10rpx 15rpx 10rpx 15rpx;
+}
+.item-image{
+  width: 50%;
+  height: 250rpx;
+}
+.item-desc{
+  width: 50%;
+  height: 250rpx;
+}
+.right-top{
+  height: 140rpx;
+  width: 75%;
+  background: #ffac38
+}
+.left-top{
+  
+  background: #ffac38;
+}
+.right-top>view:nth-child(1){
+  color: white;
+  font-size: 16rpx;
+  
+}
+.right-top>view:nth-child(2){
+  color: white;
+  font-size: 12rpx;
+}
+.right-top>view:nth-child(3){
+  color: white;
+  font-size: 12rpx;
+}
+.item-title{
+  color: black;
+  font-weight: 600;
+  margin-top: 20rpx;
+  text-align: right;
+  padding-right: 20rpx;
+}
+.item-price{
+  color: #ffac38;
+  font-weight: 500;
+  margin-top: 30rpx;
+  text-align: right;
+  padding-right: 20rpx;
+
+}
+.item-button>view{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60rpx 0 60rpx;
+  margin-right: -40rpx;
+}
+.item-button>view>view{
+  margin-top: 14rpx;
+}
+.bottom{
+  display: flex;
+  width: 100%;
+  height: 107rpx;
+  background: #ffac38;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.buyCar{
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+  border-right: 2rpx solid white;
+  margin-right: 2rpx;
+}
+.price{
+  width: 75%;
+  display: flex;
+}
+.price>view{
+  line-height: 107rpx;
+}
+.price>view:nth-child(1){
+  width: 70%;
+  color: white;
+  padding-left: 80rpx;
+}
+.price>view:nth-child(2){
+  width: 30%;
+  color: white;
+  border-left: 2rpx solid white;
+  text-align: center;
+}

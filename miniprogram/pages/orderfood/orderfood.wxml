@@ -1,0 +1,74 @@
+<view class="top">
+    <view class="left-top" style="height:140rpx;width:25%"></view>
+  <view class="right-top">
+      <view>好消息:现在购买[双层鸡排堡(香脆/藤椒)、果木香风味火烤鸡腿堡、小皇堡(原味/天椒)、老狠霸王牛堡、色狠霸王鸡        堡、迪狠霸王鱼堡]中任何一款汉堡的正价中/大号套餐之外，再加点一份王道嫩香鸡块(5块) /新地(巧克力/草莓) /满心红豆派       的话，可以直接参加4件套活动，其中色狠霸王牛堡、色狠霸王鸡堡、老狠霸王鱼堡4件套29元起，其余汉堡4件套25元起，详见        店内4件套海报!
+      </view>
+      <view>
+        备注:该活动为限时促销活动,活动时间为2020年1月15日起。
+      </view>
+      <view>
+        优惠数量有限售完即止，请以汉堡王餐厅当日库存为准，详询店员。
+      </view>
+    </view>
+  </view>
+<view class='productNav'>
+  <!-- 左侧 -->
+  
+  
+  <view class='left'>
+    <!-- <block>
+      <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>活动&新品</view>
+    </block> -->
+    
+    <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>活动&新品</view>
+    <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>现磨咖啡</view>
+    <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>套餐</view>
+    <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>汉堡</view>
+    <view class="{{active==4?'selected':'normal'}}" id="4" bindtap='switchNav'>小食</view>
+    <view class="{{active==5?'selected':'normal'}}" id="5" bindtap='switchNav'>甜品</view>
+    <view class="{{active==6?'selected':'normal'}}" id="6" bindtap='switchNav'>饮料</view>
+    <view class="{{active==7?'selected':'normal'}}" id="7" bindtap='switchNav'>儿童餐</view>
+
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+    
+    <view class='type'>
+      <block wx:for="{{desc}}" wx:key="index">
+        <view class="item">
+          <view class="item-image">
+            <!-- <image src=""></image> -->
+          </view>
+          <view class="item-desc">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-price">{{item.price}}元</view>
+            <view class="item-button">
+              <view>
+                <view class="item-sub">
+                <image src="/images/sub.png" style="width:50rpx;height:50rpx;" bindtap="sub"id="{{index}}"></image>
+              </view>
+              <view class="item-count" >{{count[index]}}</view>
+              <view class="item-add">
+                <image src="/images/add.png" style="width:50rpx;height:50rpx;"bindtap="add"id="{{index}}"></image>
+              </view>
+              </view>
+            </view>
+          </view>         
+        </view>
+      </block>
+
+    </view>
+  </view>
+  
+</view>
+<view class="bottom">
+    <view class="buyCar">
+      <image src="/images/购物车.png" style="width:100rpx;height:100rpx"></image>
+    </view>
+    <view class="price">
+      <view>{{sum}}元</view>
+      <view bindtap="pay">选好了</view>
+    </view>
+</view>
+
+<van-toast id="van-toast"/>
